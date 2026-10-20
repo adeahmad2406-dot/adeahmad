@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #edf1f5;
+  color: #263445;
+  padding: 32px 16px;
+  line-height: 1.6;
+}
+
+.cv {
+  width: 100%;
+  max-width: 900px;
+  min-height: 650px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  background: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 12px 35px rgba(25, 45, 70, 0.15);
+}
+
+.sidebar {
+  background: #173b5e;
+  color: #fff;
+  padding: 36px 28px;
+}
+
+.profile-photo {
+  display: block;
+  width: 170px;
+  height: 210px;
+  object-fit: cover;
+  object-position: center 25%;
+  border: 5px solid rgba(255,255,255,0.9);
+  border-radius: 14px;
+  margin: 0 auto 24px;
+}
+
+.sidebar h1 {
+  font-size: 25px;
+  line-height: 1.25;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+.tagline {
+  text-align: center;
+  color: #c7d9e8;
+  margin-top: 8px;
+}
+
+.side-line {
+  height: 3px;
+  width: 55px;
+  background: #f0bd62;
+  margin: 25px 0;
+  border-radius: 5px;
+}
+
+.sidebar h2 {
+  font-size: 17px;
+  margin-bottom: 16px;
+  color: #f0bd62;
+}
+
+.sidebar p {
+  margin: 0 0 15px;
+  overflow-wrap: anywhere;
+}
+
+.sidebar p span {
+  display: block;
+  color: #c7d9e8;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.content {
+  padding: 42px 38px;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.section h2 {
+  font-size: 20px;
+  color: #173b5e;
+  padding-bottom: 9px;
+  margin-bottom: 14px;
+  border-bottom: 2px solid #e6edf3;
+}
+
+.section p {
+  color: #526171;
+}
+
+.item {
+  margin-bottom: 14px;
+}
+
+.item h3 {
+  font-size: 16px;
+  color: #263445;
+  margin-bottom: 4px;
+}
+
+.skill {
+  display: inline-block;
+  background: #e8f1f8;
+  color: #173b5e;
+  padding: 9px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+@media (max-width: 650px) {
+  body {
+    padding: 14px 8px;
+  }
+
+  .cv {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    padding: 28px 24px;
+  }
+
+  .profile-photo {
+    width: 150px;
+    height: 185px;
+  }
+
+  .side-line {
+    margin: 20px auto;
+  }
+
+  .content {
+    padding: 28px 24px;
+  }
+}
